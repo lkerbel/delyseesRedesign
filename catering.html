@@ -40,41 +40,55 @@
     			-->
 
     			<form action="sendEmail.php" method="post" class="myForm" autocomplete="off" name="myForm">
-    				<input type="text" class="names" name="firstName" placeholder="First Name">
-    				<input type="text" class="names" name="lastName" placeholder="Last Name">
+    				<div class="row1">
+	    				<input type="text" class="names" name="firstName" placeholder="First Name">
+	    				<input type="text" class="names" name="lastName" placeholder="Last Name">
+    				</div><!--row1-->
+
+    				<div class="row2">
     				<input type="text" class="contactInfo" name="phone" placeholder="Phone Number">
     				<input type="email" class="contactInfo" name="email" placeholder="Email">
     				I Prefer to be contacted by:
     				<input type="radio" name="contactPref" value="email" checked>Email
     				<input type="radio" name="contactPref" value="phone" checked>Phone
     				<input type="radio" name="contactPref" value="either" checked>Either
-    				
-    				I would like to order:
-    				<input type="checkbox" name="order" value="cake"> Cake
-    				<input type="checkbox" name="order" value="tarts"> Tarts
-    				<input type="checkbox" name="order" value="macaronsBox"> Macarons (box)
-    				<input type="checkbox" name="order" value="macaronsTower"> Macarons (tower)
-    				<input type="checkbox" name="order" value="eclairs"> Eclairs
-    				<input type="checkbox" name="order" value="chocolates"> Chocolates
-    				<input type="checkbox" name="order" value="croissants"> Croissants
-    				<input type="checkbox" name="order" value="sandwiches"> Sandwiches
-    				<input type="checkbox" name="order" value="salads"> Salads
-    				<input type="checkbox" name="order" value="other"> Other (please specify below)
-    				<textarea name="other" cols="1" rows="10"></textarea>
+    				</div><!--row2-->
 
+    				<div class="row3">
+    				I would like to order:
+	    				<input type="checkbox" name="order" value="cake"> Cake
+	    				<input type="checkbox" name="order" value="tarts"> Tarts
+	    				<input type="checkbox" name="order" value="macaronsBox"> Macarons (box)
+	    				<input type="checkbox" name="order" value="macaronsTower"> Macarons (tower)
+	    				<input type="checkbox" name="order" value="eclairs"> Eclairs
+	    				<input type="checkbox" name="order" value="chocolates"> Chocolates
+	    				<input type="checkbox" name="order" value="croissants"> Croissants
+	    				<input type="checkbox" name="order" value="sandwiches"> Sandwiches
+	    				<input type="checkbox" name="order" value="salads"> Salads
+	    				<input type="checkbox" name="order" value="other"> Other (please specify below)
+    				</div><!--row3-->
+
+    				<div class="row4">
+    					<textarea name="other" cols="1" rows="10"></textarea>
+    				</div><!--row4-->
+
+					<div class="row5">
     				Number of Guests:
-    				<select name="guests" id="guestNum">
-    					<option value="five10">5-10</option>
-    					<option value="ten30">10-30</option>
-    					<option value="thirty60">30-60</option>
-    					<option value="sixty120">60-120</option>
-    					<option value="200">200+</option>
-    				</select>
+	    				<select name="guests" id="guestNum">
+	    					<option value="five10">5-10</option>
+	    					<option value="ten30">10-30</option>
+	    					<option value="thirty60">30-60</option>
+	    					<option value="sixty120">60-120</option>
+	    					<option value="200">200+</option>
+	    				</select>
 
     				Event Date:
-    				<input type="text" class="date" name="date" placeholder="dd/mm/yyyy">
+	    				<input type="text" class="date" name="date" placeholder="dd/mm/yyyy">
+    				</div><!--row5-->
 
-    				<input type="submit">
+					<div class="row6">
+    					<input type="submit">
+					</div><!--row6-->
     			</form>
 
 
