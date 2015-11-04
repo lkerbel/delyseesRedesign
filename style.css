@@ -13,7 +13,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 - Header
 - Page Structure
 - Headings
-- Text Styles
+- Typography
 - Navigation
 - Forms
 - Miscellaneous 
@@ -64,8 +64,7 @@ a:hover {
 
 div.header {
 	max-width: 1260px;
-/*	margin:auto;
-*/	display: flex;
+	display: flex;
     display: -webkit-flex;
     flex-direction: row;
     -webkit-flex-direction: row;
@@ -81,13 +80,43 @@ div.logo {
 
 
 /* -----------------------------------*/
+/* -------->>> NAVIGATION <<<---------*/
+/* -----------------------------------*/
+
+div.navList {
+	display: flex;
+	display: -webkit-flex;
+	align-self: flex-end;
+}
+
+ul.nav {
+	list-style: none;
+	align-self: flex-end;
+}
+
+.nav li {
+	float: left;
+	padding: 0 10px;
+}
+
+.nav a {
+	color: #2d2d2d;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	font-weight: light;
+	letter-spacing: 2.5px;
+}
+
+
+
+/* -----------------------------------*/
 /* ---------->>> FOOTER <<<-----------*/
 /* -----------------------------------*/
 
 
 div.footer {
 	margin-top: 450px;
-	max-width: 1260px
+	max-width: 1260px;
 }
 
 ul.social {
@@ -117,17 +146,25 @@ div#homePage {
 	margin: 0 auto;
 	background: url("images/homeBG.jpg") no-repeat center;
 	background-size: contain;
-
 }
 
 
+div.col1, div.col2{
+	width: 45%;
+	border: 1px solid #000000;
+}
 
+img.item {
+	width: 40%;
+	border-radius: 50%;
+}
 
 /* -----------------------------------*/
 /* --------->>> HEADINGS <<<----------*/
 /* -----------------------------------*/
 
 h1 {
+	
 
 }
 
@@ -139,39 +176,33 @@ h3 {
 
 }
 
+div.pgTitle {
+	width: 100%;
+	background: url("images/mac-group.png") no-repeat center;
+	background-size: cover;
+	display: block;
+	
+	padding: 120px;
+	color: #ffffff;
+	margin-bottom: 20px;
+	opacity: 0.7;
+	text-align: center;
+}
 
+.pgTitle h1 {
+	display: inline;
+	font: small-caps 200 3rem  "freight-big-pro", serif;
+	letter-spacing: 3px;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 5px;
+
+
+}
 
 /* -----------------------------------*/
 /* -------->>> TYPOGRAPHY <<<---------*/
 /* -----------------------------------*/
 
-
-/* -----------------------------------*/
-/* -------->>> NAVIGATION <<<---------*/
-/* -----------------------------------*/
-
-div.navList {
-	align-self: flex-end;
-}
-
-ul.nav {
-	list-style: none;
-/*	float:right;
-*/	
-}
-
-.nav li {
-	float: left;
-	padding: 0 10px;
-}
-
-.nav a {
-	color: #2d2d2d;
-	text-transform: uppercase;
-	font-size: 0.8rem;
-	font-weight: light;
-	letter-spacing: 2.5px;
-}
 
 
 /* -----------------------------------*/
