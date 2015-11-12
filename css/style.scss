@@ -1,3 +1,5 @@
+@import "variables";
+
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
 input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 
@@ -9,66 +11,208 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 /* Contents */
 
-- Global Styles 
-- Header
-- Page Structure
-- Headings
-- Text Styles
-- Navigation
-- Forms
-- Miscellaneous 
+// - Global Styles 
+// - Header
+// - Page Structure
+// - Headings
+// - Typography
+// - Navigation
+// - Forms
+// - Miscellaneous 
 
 
-/* -----------------------------------*/
-/* ---------->>> GLOBAL <<<-----------*/
-/* -----------------------------------*/
+// -----------------------------------
+// ---------->>> GLOBAL <<<-----------
+// -----------------------------------
 
 img {
 	max-width: 100%;
 }
 
 body {
-  font: 13px thin "brandon-grotesque",sans-serif;
-
+ 	font: 13px thin "brandon-grotesque",sans-serif;
+	width: 100%;
+	background: #f2f2f2;
+	margin: 0 auto;
+	padding: 5% 9%;
 }
 
 p {
 
 }
 
+
+
 div.siteWrapper {
-	max-width: 1900px;
-	padding: 20px 50px;
+	width: 100%;
+	background: rgba(131, 130, 146, 0.02);
+	margin: 0 auto;
+	padding: 5% 9%;
+	
 }
 
-$darkgray: #2d2d2d;
-$lightgray: #8b8b8b;
 
-/* -----------------------------------*/
-/* ---------->>> HEADER <<<-----------*/
-/* -----------------------------------*/
+ul {
+	list-style: none;
+}
 
-/*div.header{
-	max-width: 1280px;
-}*/
+a {
+	text-decoration: none;
+}
+
+a:hover {
+
+}
+
+
+
+// -----------------------------------
+// ---------->>> HEADER <<<-----------
+// -----------------------------------
+
+div.header {
+	max-width: 1260px;
+	display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content:space-between;
+}
 
 div.logo {
-	width: 25%;
+	width: 22%;
+	min-width: 186px;
+	display: inline-block;
+}
+
+
+// -----------------------------------
+// -------->>> NAVIGATION <<<---------
+// -----------------------------------
+
+div.navList {
+	display: flex;
+	display: -webkit-flex;
+	align-self: flex-end;
+}
+
+ul.nav {
+	list-style: none;
+	align-self: flex-end;
+}
+
+.nav li {
+	float: left;
+	padding: 0 10px;
+}
+
+.nav a {
+	color: #2d2d2d;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	font-weight: light;
+	letter-spacing: 2.5px;
 }
 
 
 
-/* -----------------------------------*/
-/* ------->>> PAGE STRUCTURE <<<------*/
-/* -----------------------------------*/
+// -----------------------------------
+// ---------->>> FOOTER <<<-----------
+// -----------------------------------
 
 
-/* -----------------------------------*/
-/* --------->>> HEADINGS <<<----------*/
-/* -----------------------------------*/
+div.footer {
+	max-width: 1260px;
+	margin-top: 100px;
+}
+
+ul.social {
+	list-style: none;
+	float: right;
+}
+
+ul.social li {
+	display:inline;
+	font-size: 1.2rem;
+}
+
+ul.social li {
+	color: #000;
+}
+
+.address {
+	display: inline-block;
+}
+
+// -----------------------------------
+// ------->>> PAGE STRUCTURE <<<------
+// -----------------------------------
+
+div#homePage {
+	width: 100%;
+	margin: 0 auto;
+	background-size: contain;
+}
+
+div.homeImg {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+.menu {
+	display: flex;
+	margin-top: 50px;
+}
+
+div.col1, div.col2{
+	width: 50%;
+	border: 1px solid rgba(160, 142, 142, 0.38);
+	display: inline-block;
+	display: flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	padding: 30px 0;
+}
+
+div.col2 {
+	margin-left: 5%;
+}
+
+div.menuItem img{
+	float:left;
+	margin: 20px 30px;
+	width: 25%;
+	border-radius: 50%;
+}
+
+div.menuItem p {
+	line-height: 1.8;
+	padding-right: 25px;
+}
+
+div.menuItem h3 {
+font: 200 1.5rem  "freight-big-pro", serif;
+line-height: .01;
+letter-spacing: 1px;
+margin-top: 40px;
+
+}
+
+
+
+// -----------------------------------
+// --------->>> HEADINGS <<<----------
+// -----------------------------------
 
 h1 {
-	font: "freight-big-pro", serif 2rem $darkgray;
+	color: $headers;
+	font: small-caps 200 3rem  "freight-big-pro", serif;
+	letter-spacing: 5px;
+	padding-bottom: 5px;
+	text-align: center;
 
 }
 
@@ -80,37 +224,147 @@ h3 {
 
 }
 
+div.pgTitle {
+	width: 100%;
+	background: url("/images/mac-group.png") no-repeat center;
+	background-size: cover;
+	display: block;
+	padding: 120px;
+	color: #ffffff;
+	margin: 20px 0;
+	opacity: 0.7;
+	text-align: center;
 
 
-/* -----------------------------------*/
-/* -------->>> TYPOGRAPHY <<<---------*/
-/* -----------------------------------*/
+		h1 {
+			color: $pTitle;
+			display: inline;
+			border-bottom: 1px solid #fff;
 
 
-/* -----------------------------------*/
-/* -------->>> NAVIGATION <<<---------*/
-/* -----------------------------------*/
+		
 
-ul.nav {
-	list-style: none;
+			img {
+				width: 1280px;
+				display:block;
+				padding-left:0;
+				padding-right: 0;
+			}
+		}
 }
 
-.nav li {
-	float: left;
+// -----------------------------------
+// -------->>> TYPOGRAPHY <<<---------
+// -----------------------------------
+
+p.order {
+	font-size: 1.5rem;
 }
 
-.nav a {
-	color:$darkgray;
-	text-transform: uppercase;
-	padding: 0 10px;
+
+
+// ----------------------------------
+// ----------->>> FORMS <<<----------
+// ----------------------------------
+// 
+
+div.check {
+	display: block;
+	margin-bottom: 10px;
+}
+
+label {
+	margin-left: 10px;
+}
+
+textarea {
+	width: 100%;
+	margin: 10px 0 20px 0;
 }
 
 
-/* -----------------------------------*/
-/* ----------->>> FORMS <<<-----------*/
-/* -----------------------------------*/
+input {
+	padding: 10px;
+}
+
+div.row8 input {
+	width: 25%;
+
+}
 
 
-/* -----------------------------------*/
-/* ----------->>> MISC <<<------------*/
-/* -----------------------------------*/
+ul.row1 {
+	width: 100%;
+	padding: 20px 0 10px 0;
+
+		li {
+			display: inline;
+
+				&:nth-child(2) {
+					position: relative;
+					right: -3.5%;				
+					}
+		}
+}
+
+
+ul.row1 input {
+	width:48%;
+}
+
+
+
+div.row2 {
+	width: 100%;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+
+		input {
+			width: 48%;
+			display: inline;
+
+				&:nth-child(2) {
+					position: relative;
+					right: -3.5%;				
+					}
+		}
+}
+
+div.row3 {
+	float:left;
+}
+
+
+div {
+	&.row3, &.row4 {
+		width: 50%;
+		display:inline;
+		padding-bottom: 10px;
+	}
+
+}
+
+div.row5 {
+	padding-bottom: 20px;
+}
+
+div {
+	&.row6, &.row7 {
+		width: 50%;
+		display:inline;
+		margin: 500px 5% 0 0;
+
+	}
+
+}
+
+
+
+div.row8 {
+	margin: 50px auto;
+	text-align: center;
+}
+
+// -----------------------------------
+// ----------->>> MISC <<<------------
+// -----------------------------------
