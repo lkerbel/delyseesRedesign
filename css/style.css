@@ -337,6 +337,12 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
 div.pgTitle {
   width: 100%;
   background: url("/images/mac-group.png") no-repeat center;
@@ -362,8 +368,9 @@ div.pgTitle h1 img {
   padding-right: 0;
 }
 
-p.order {
-  font-size: 1.5rem;
+p.catering {
+  padding-top: 20px;
+  font-size: 1.4rem;
 }
 
 div.check {
@@ -378,6 +385,7 @@ label {
 textarea {
   width: 100%;
   margin: 10px 0 20px 0;
+  padding: 20px;
 }
 
 input {
@@ -400,6 +408,10 @@ ul.row1 li {
 ul.row1 li:nth-child(2) {
   position: relative;
   right: -3.5%;
+}
+
+div .row1, div.row2, div.row3, div.row4, div.row5, div.row6, div.row7, div.row8 {
+  font-size: 1rem;
 }
 
 ul.row1 input {
@@ -440,6 +452,12 @@ div.row6, div.row7 {
   width: 50%;
   display: inline;
   margin: 500px 5% 0 0;
+}
+
+div.row6 label, div.row7 label {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-right: 10px;
 }
 
 div.row8 {

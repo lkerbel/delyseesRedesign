@@ -217,7 +217,9 @@ h1 {
 }
 
 h2 {
-
+font-size: 1.5rem;
+font-weight: 300;
+text-transform: uppercase;
 }
 
 h3 {
@@ -258,7 +260,12 @@ div.pgTitle {
 // -----------------------------------
 
 p.order {
-	font-size: 1.5rem;
+	
+}
+
+p.catering {
+	padding-top: 20px;
+	font-size: 1.4rem;
 }
 
 
@@ -280,6 +287,7 @@ label {
 textarea {
 	width: 100%;
 	margin: 10px 0 20px 0;
+	padding: 20px;
 }
 
 
@@ -307,6 +315,11 @@ ul.row1 {
 		}
 }
 
+div {
+	.row1, &.row2, &.row3, &.row4, &.row5, &.row6, &.row7, &.row8 {
+		font-size: 1rem;
+	}
+}
 
 ul.row1 input {
 	width:48%;
@@ -354,10 +367,15 @@ div {
 		display:inline;
 		margin: 500px 5% 0 0;
 
+			label {
+				font-weight: 600;
+				text-transform: uppercase;
+				padding-right: 10px;
+			}
+
 	}
 
 }
-
 
 
 div.row8 {
